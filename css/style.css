@@ -498,3 +498,58 @@ font-size: 14px;
 .sidebar p + .btn {
     margin-top: 20px;
 }
+
+.sidebar .title {
+    width: 100px;
+}
+
+
+/*----adaptiv------*/
+
+
+@media(max-width: 1300px) {
+    .footer {
+        grid-template-columns:  1fr 1.5fr 1fr;
+        grid-template-rows: max-content 100px;
+        grid-template-areas: 'socials form logo'
+                              '. . copy';
+        padding-left: 5%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .main {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+        grid-template-areas: "freshy freshy freshy healthy"
+                             "slider-arrows slider-arrows slider-arrows healthy"
+                             "thirsty thirsty thirsty thirsty"
+                             "slider-dots slider-dots orange orange";
+    }
+
+    .slider-arrows, .slider-dots, .orange {
+        height: 300px;
+    } 
+
+    .slider-dots__item , .slider-arrows__item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-down {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "sidebar" "footer";
+    }
+
+    .common--rov-rev {
+        padding-right: 90px;
+    }
+    .sidebar .common__desc {
+        max-width: 200px;
+        gap: 20px;
+    }
+    .sidebar {
+        
+    }
+}

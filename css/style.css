@@ -599,14 +599,24 @@ font-size: 14px;
     }
     .common--col-rev .common__desc,
     .thirsty .common__desc,
-    .sidebar .common__desc {
+    .sidebar .common__desc, .common__desc {
        max-width: unset;  
     }
     .common--row-rev {
         padding-right: 30px;
     }
     .sidebar {
-        padding-left: 30px;
+        padding-left: 20px;
+    }
+    .common {
+        padding: 10px;
+        gap: 15px;
+    }
+    .form__input {
+        width: 150px;
+    }
+    .header {
+        padding: 10px;
     }
 
 }

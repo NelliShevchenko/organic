@@ -735,3 +735,15 @@ button {
     }
 }
 
+.slider-arrows__item, .slider-dots__item {
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+     opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+}
